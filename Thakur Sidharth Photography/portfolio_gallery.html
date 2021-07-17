@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidharth gallery</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--font awesome icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!--bootstarp-->
+    <link rel="stylesheet" href="gallery.css"> <!--css-->
+
+</head>
+<body>
+
+    <!-- top navbar
+    ========================================================================================== -->
+
+    <nav class="top">
+        <div class="row text-center">
+    
+          <div class="col-md-4 px-0">
+            <ul class="nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="main.html#Home"><b>Home</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="main.html#About_us"><b>About</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="main.html#Contact_us"><b>Contact</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html"><b>Shop</b></a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-4 px-0">
+            <img src="images/logo3.png" class="img-fluid mx-auto" alt="">
+          </div>
+    
+          <div class="col-md-4 px-0">
+            <ul class="nav ml-4">
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/sidh.rajput"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://instagram.com/sidhaarththakur1?igshid=1tzjyuuc325ox"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="mailto:ashishverma.er@gmaiil.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+    
+        </div>
+      </nav>
+
+    <!-- carousel(slider) 
+    =====================================================================================-->
+
+    <div id="carousel">
+
+        <div class="left1">
+            <img src="images2/portfolio/PicsArt_06-28-05.34.27.jpg" alt="">
+        </div>
+        
+        <div class="selected">
+            <img src="images2/portfolio/PicsArt_06-28-05.32.56.jpg" alt="">
+        </div>
+
+        <div class="right1">
+            <img src="images2/portfolio/74917346_860574904358298_7787405976427023611_n.jpg" alt="">
+        </div>
+
+        <div class="rightmost">
+            <img src="images2/portfolio/PicsArt_06-28-05.31.08.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- other collection
+    ================================================================ -->
+
+    <div class="other_collection">
+      <h2>Other Collections :</h2>
+
+      <div class="row Collections">
+
+          <div class="col-md-6 other_gal">
+              <div class="other_gal-item ">
+                  <a href="food_gallery.html">
+                      <img src="images2/food/DSC_75701.jpg" class="img-fluid" alt="">
+                      <h3>Food Shoot</h3>
+                  </a>
+              </div>   
+          </div>
+          <div class="col-md-6 other_gal">
+              <div class="other_gal-item">
+                  <a href="places_gallery.html">
+                      <img src="images2/places/InShot_20190905_185452064.jpg" class="img-fluid" alt="">
+                      <h3>History</h3>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-6 other_gal">
+              <div class="other_gal-item">
+                  <a href="">
+                      <img src="images2/wedding/71537729_1356274074560502_7992668544519123502_n.jpg" class="img-fluid" alt="">
+                      <h3>wedding</h3>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-6 other_gal">
+              <div class="other_gal-item">
+                  <a href="product_gallery.html">
+                      <img src="images2/product/IMG_675611.jpg" class="img-fluid" alt="">
+                      <h3>Product Shoot</h3>
+                  </a>
+              </div>
+          </div>
+          
+      </div>
+
+    </div>
+
+    <!-- want shoot
+    =================================================================== -->
+
+    <div class="want_shoot">
+        <div class="want_shoot_form">
+            <form action="">
+                <h2>Want a shoot like this?</h2>
+                <div class="form-group">
+                    <label for="ws_name">Full Name</label>
+                    <input type="text" id="ws_name">
+                </div>
+                <div class="form-group">
+                    <label for="ws_phone">Phone Number</label>
+                    <input type="text" id="ws_phone">
+                </div>
+                <div class="form-group">
+                    <label for="ws_email">E-mail</label>
+                    <input type="email">
+                </div>
+                <div class="form-group">
+                    <label for="ws_shoot_type">Shoot type</label>
+                    <select id="ws_shoot_type">
+                        <option value="">Portfolio</option>
+                        <option value="">Food shoot</option>
+                        <option value="">Product shoot</option>
+                        <option value="">Wedding</option>
+                        <option value="">Pre-Wedding</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ws_message">Your Message</label>
+                    <textarea name="" id="ws_message" cols="10" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <button>Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div class="want_shoot_img">
+            <img src="images2/portfolio/PicsArt_06-28-05.34.27.jpg" class="img-fluid" alt="">
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>

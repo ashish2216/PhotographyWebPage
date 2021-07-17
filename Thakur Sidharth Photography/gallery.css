@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body,*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* top navbar css
+==================================================================== */
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin: 0rem 0rem 3rem;
+    word-spacing: 5px;
+}
+.top {
+    height: 201px;
+    padding: 20px 0px;
+    margin: 0px 15px;
+}
+.top a{
+    font-size: 20px;
+    color: #000;
+}
+.top ul{
+    line-height: 152px;
+    width: fit-content;
+}
+
+/* slider css
+=============================================================== */
+
+#carousel{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#carousel div{
+    position: absolute;
+    transition: 1.5s;
+    height: 100%;
+}
+
+#carousel img{
+    height: 100%;
+}
+
+.leftmost{
+    left: -100% ;
+    transform: translate(-50%,0px) scale(0.7);
+}
+
+.left1{
+    left: 0%;
+    z-index: 5;
+    /* transform: scale(0.75); */
+    transform: translate(-50%,0px) scale(0.75);
+    filter: blur(5px);
+}
+
+.selected{
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,0px) scale(1);
+    filter: none;
+}
+
+.right1{
+    left: 100%;
+    z-index: 5;
+    /* transform: scale(0.75); */
+    transform: translate(-50%,0px) scale(0.75);
+    filter: blur(5px);
+    
+}
+.rightmost{
+    left: 200%;
+    transform: translate(-50%,0px) scale(0.7);
+}
+.left1:hover{
+    cursor: url("icons/previous.png"),auto;
+}
+.right1:hover{
+    cursor: url("icons/next.png"),auto;
+}
+
+/* other collection css
+====================================================================================*/
+
+.other_collection{
+    margin: 8rem 8rem 1rem;
+}
+.Collections{
+    margin: 0rem 2rem;
+}
+.Collections img{
+    width: 100%;
+    height: 100%;
+}
+.Collections .other_gal{
+    padding: 0px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.Collections .other_gal-item{
+    position: relative;
+    height: fit-content;
+    cursor: pointer;
+}
+.Collections .other_gal-item h3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.Collections .other_gal-item h3:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.7s;
+}
+
+/* want shoot css
+================================================================================ */
+
+.want_shoot{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+}
+.want_shoot_form{
+    width: 75%;
+    float: left;
+    background-color: #000;
+    padding: 8rem 25rem 0rem 10rem;
+    color: #fff;
+}
+.want_shoot_form input, .want_shoot textarea {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    /* font-size: 1rem; */
+    /* line-height: 1.5rem; */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+}
+.want_shoot_form input:focus, 
+    .want_shoot textarea:focus, 
+        .want_shoot select:focus, 
+            .want_shoot_form button:focus{
+                outline: none;
+}
+.want_shoot_form select{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    /* font-size: 1rem; */
+    /* line-height: 1.5rem; */
+    border-radius: 0px;
+    border: none;
+}
+.want_shoot_form label{
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+}
+.want_shoot_form button{
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+.want_shoot_form .form-group{
+    margin-bottom: 40px;
+}
+.want_shoot_form form h2{
+    margin: 0rem 0rem 4rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.want_shoot .want_shoot_img{
+    position: absolute;
+    /* width: 400px; */
+    /* height: 600px; */
+    left: 75%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.want_shoot_img img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media (max-width:991px){
+    .top a{font-size: 18px;}
+    .top img{width: 220px;}
+    .top {height: 23.5vh;}
+    .top ul{line-height: 15.5vh;}
+}
+
+@media (max-width:800px){
+    .top a{font-size: 17px;}
+    .top img{width: 210px;}
+}
+
+@media (max-width:767px){
+    .top a{font-size: 16px;}
+    .top img{width: 200px;}
+    .top{height: fit-content;}
+    .top ul{
+        line-height: normal;
+        margin: 0 auto !important;
+    }
+}
+
+@media (max-width:500px){
+    .top a{font-size: 15px;}
+    .top img{width: 180px;} 
+}
+
+@media (max-width:400px){
+    .top a{font-size: 14px;}
+}
